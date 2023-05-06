@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #16161a;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  color: #16161a;
+}
+
+.box {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#hour {
+  width: auto;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 44px;
+  font-family: "Audiowide", cursive;
+  font-weight: bold;
+}
+
+.box div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box img {
+  border-radius: 10px;
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 70%;
+  }
+
+  .container .title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .container #hour {
+    font-size: 38px;
+  }
+
+  .img-box img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 100%;
+  }
+
+  .container .title {
+    width: 80%;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .container #hour {
+    font-size: 32px;
+  }
+
+  .img-box img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .container .title {
+    width: 90%;
+  }
+}
