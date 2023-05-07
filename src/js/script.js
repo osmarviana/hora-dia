@@ -100,11 +100,11 @@ function clock() {
   if (hour > 5 && hour < 18) {
     document.body.style.backgroundColor = "#eeee80";
     hourNow.style.backgroundColor = "#eeee80";
-    img.innerHTML = `<img src='../src/img/dia.jpg' alt='Imagem dia''>`;
+    img.innerHTML = `<img src="../src/img/dia.jpg" alt="Imagem dia">`;
   } else {
     document.body.style.backgroundColor = "#131341";
     hourNow.style.backgroundColor = "#131341";
-    img.innerHTML = `<img src='../src/img/noite.jpg' alt='Imagem noite''>`;
+    img.innerHTML = `<img src="../src/img/noite.jpg" alt="Imagem noite">`;
   }
 }
 
