@@ -40,9 +40,28 @@ body {
   text-align: center;
 }
 
+#img-illustration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #img-illustration img {
   width: 150px;
   border-radius: 50%;
+}
+
+#img-illustration .dia {
+  color: yellow;
+}
+
+#img-illustration .tarde {
+  color: orange;
+}
+
+#img-illustration .noite {
+  color: blue;
 }
 
 .box {
