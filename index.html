@@ -4,23 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hora do Dia</title>
+    <title>Hora do Dia - Dia, data, hora e clima</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variable.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/a6af6215d3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1 class="title" id="title"></h1>
-      </header>
-      <section class="box">
+    <main class="container">
+      <div id="date-hour">
+        <h2 class="date" id="date"></h2>
         <div class="hour" id="hour"></div>
+      </div>
+      <div id="img-illustration"></div>
+      <section class="box">
+        <div class="hide" id="weather-data">
+          <div class="city-data" id="city-data">
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="city"></span>
+            <p id="temperature"><span></span>&deg;C</p>
+          </div>
+          <div id="description-container">
+            <p id="description"></p>
+            <img src="" alt="Condições do tempo" id="weather-icon" />
+          </div>
+          <div id="details-container">
+            <p id="humidity">
+              <i class="fa-solid fa-droplet"></i>
+              <span></span>
+            </p>
+            <p id="wind">
+              <i class="fa-solid fa-wind"></i>
+              <span></span>
+            </p>
+          </div>
+        </div>
         <div class="img-box" id="img"></div>
       </section>
-      <footer class="footer">
-        <p>&copy;Osmar Viana</p>
-      </footer>
-    </div>
+    </main>
+    <footer class="footer">
+      <p>By Osmar Viana&copy;</p>
+    </footer>
 
     <script src="./src/js/script.js"></script>
+    <script src="./src/js/apiWeather.js"></script>
   </body>
 </html>

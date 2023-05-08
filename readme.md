@@ -1,10 +1,10 @@
 # Projeto Hora e dia
 
-Ferramenta criada para mostrar dia, data e hora através de um relógio digital.
+Consulte data, hora e clima de sua localidade. Isso foi possível através de consumo de API do clima e uso de função new Date.
 
 ### Objetivo
 
-O projeto foi criado para praticar alguns conceitos básicos de JavaScript como variáveis, funções, eventos DOM, laços de repetição e estruturas condicionais.
+O projeto foi criado para praticar alguns conceitos básicos de JavaScript como variáveis, funções, eventos DOM, laços de repetição, estruturas condicionais e consumo de API.
 
 </br>
 
@@ -13,7 +13,7 @@ O projeto foi criado para praticar alguns conceitos básicos de JavaScript como 
 </br>
 
 <div align='center'>
-<img src="./design/desktop-design.gif">
+<img src="./design/desktop-design.png">
 </div>
 
 </br>

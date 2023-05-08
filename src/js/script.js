@@ -1,31 +1,32 @@
 const hourNow = document.getElementById("hour");
-const dayNow = document.getElementById("title");
-const img = document.getElementById("img");
+const dayNow = document.getElementById("date");
+const imgContainer = document.querySelector("#img-illustration");
+const container = document.querySelector(".container");
 
 const date = new Date();
 let day = date.getDay();
 let dateDay = date.getDate();
 let month = date.getMonth();
 let year = date.getFullYear();
-console.log(dateDay, month, year);
+
 switch (day) {
   case 0:
     day = "Domingo";
     break;
   case 1:
-    day = "Segunda-feira";
+    day = "Segunda";
     break;
   case 2:
-    day = "Terça-feira";
+    day = "Terça";
     break;
   case 3:
-    day = "Quarta-feira";
+    day = "Quarta";
     break;
   case 4:
-    day = "Quinta-feira";
+    day = "Quinta";
     break;
   case 5:
-    day = "Sexta-feira";
+    day = "Sexta";
     break;
   case 6:
     day = "Sábado";
@@ -98,13 +99,15 @@ function clock() {
   hourNow.innerText = timeNow;
 
   if (hour > 5 && hour < 18) {
-    document.body.style.backgroundColor = "#eeee80";
-    hourNow.style.backgroundColor = "#eeee80";
-    img.innerHTML = `<img src="../src/img/dia.jpg" alt="Imagem dia">`;
+    document.body.style.backgroundImage =
+      "linear-gradient(rgba(186, 230, 231, 1), rgba(61, 106, 116, 0.2))";
+    container.style.backgroundColor = "rgb(0, 89, 255)";
+    imgContainer.innerHTML = `<img src="../src/img/dia.jpg">`;
   } else {
-    document.body.style.backgroundColor = "#131341";
-    hourNow.style.backgroundColor = "#131341";
-    img.innerHTML = `<img src="../src/img/noite.jpg" alt="Imagem noite">`;
+    document.body.style.backgroundImage =
+      "linear-gradient(rgba(44, 21, 59, 1), rgba(15, 3, 36, 0.8)";
+    container.style.backgroundColor = "rgb(17, 6, 43)";
+    imgContainer.innerHTML = `<img src="../src/img/noite.jpg">`;
   }
 }
 
